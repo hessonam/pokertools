@@ -29,6 +29,15 @@ $('document').ready(function() {
             req + '&b=' + boards[2] + '&d=' + boards[0] + boards[1] + hquery,
         ];
 
+        queries.map(function(query) {
+            return $.ajax(query);
+        });
+
         console.log(queries);
-    })
-})
+
+        $.when.apply(undefined, queries, ).then(function(results){
+            console.log(results);
+        });
+        
+    });
+});
