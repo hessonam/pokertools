@@ -1,5 +1,5 @@
 $('document').ready(function() {
-    $('#submit').click(function() {
+    $('#sim').click(function() {
         var req = 'http://www.propokertools.com/simulations/show?g=' + 
             $('#game').val();
         var hands = [
@@ -27,6 +27,8 @@ $('document').ready(function() {
             req + '&b=' + board[0] + '&d=' + board[1] + board[2] + hquery,
             req + '&b=' + board[1] + '&d=' + board[0] + board[2] + hquery,
             req + '&b=' + board[2] + '&d=' + board[0] + board[1] + hquery,
-        ]
+        ];
+
+        console.log(queries);
     })
 })

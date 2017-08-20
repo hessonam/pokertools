@@ -5,6 +5,10 @@ html {
 body {
 }
 
+select, input {
+    display: block;
+}
+
 .container {
 }
 
