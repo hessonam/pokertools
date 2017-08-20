@@ -24,9 +24,9 @@ $('document').ready(function() {
         }
 
         var queries = [
-            req + '&b=' + board[0] + '&d=' + board[1] + board[2] + hquery,
-            req + '&b=' + board[1] + '&d=' + board[0] + board[2] + hquery,
-            req + '&b=' + board[2] + '&d=' + board[0] + board[1] + hquery,
+            req + '&b=' + boards[0] + '&d=' + boards[1] + boards[2] + hquery,
+            req + '&b=' + boards[1] + '&d=' + boards[0] + boards[2] + hquery,
+            req + '&b=' + boards[2] + '&d=' + boards[0] + boards[1] + hquery,
         ];
 
         console.log(queries);
