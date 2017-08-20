@@ -9,9 +9,9 @@ $('document').ready(function() {
             $('#hand4').val(),
         ];
         var boards = [
-            $('board1').val(),
-            $('board2').val(),
-            $('board3').val(),
+            $('#board1').val(),
+            $('#board2').val(),
+            $('#board3').val(),
         ]
         
         hands.filter(function(hand) {
